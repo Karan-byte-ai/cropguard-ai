@@ -1,0 +1,661 @@
+[
+  {
+    "slug": "tomato-late-blight",
+    "crop": "Tomato",
+    "name_en": "Tomato Late Blight",
+    "name_hi": "टमाटर का पिछेती झुलसा",
+    "name_mr": "टोमॅटोचा करपा",
+    "pathogen": "Oomycete (Phytophthora infestans)",
+    "severity_default": "high",
+    "source_name": "ICAR - Indian Institute of Horticultural Research",
+    "source_url": "https://iihr.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Water-soaked dark lesions appearing rapidly on lower leaves and stems.",
+        "White delicate mildew sporulation on the underside of foliage during humid conditions.",
+        "Greasy brown rot patches on green tomato fruits."
+      ],
+      "organic": [
+        "Prune and burn infected plant debris immediately.",
+        "Spray Trichoderma viride or Bacillus subtilis (5g/L) as bio-control.",
+        "Apply copper oxychloride (3g/L) preventively."
+      ],
+      "chemical": [
+        "Spray Mancozeb 75% WP @ 2.0-2.5 g/L at first disease sign.",
+        "For severe outbreaks: Cymoxanil 8% + Mancozeb 64% WP @ 2g/L. Observe 7-day PHI."
+      ],
+      "prevention": [
+        "Ensure 60x45cm crop spacing for air circulation.",
+        "Use drip irrigation to keep foliage dry.",
+        "Rotate crops every 3 years with non-solanaceous crops."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्तियों और तनों पर तेजी से फैलने वाले गहरे पानीदार धब्बे।",
+        "आर्द्र मौसम में पत्ती के निचले हिस्से पर सफेद फफूंद का जमाव।",
+        "फलों पर भूरे विकृत धब्बे।"
+      ],
+      "organic": [
+        "रोगग्रस्त पत्तियों को तुरंत तोड़कर जलाएं या गाड़ें।",
+        "ट्राइकोडर्मा विरिडी (5 ग्राम प्रति लीटर) का छिड़काव करें।",
+        "कॉपर ऑक्सीक्लोराइड (3 ग्राम प्रति लीटर) का छिड़काव करें।"
+      ],
+      "chemical": [
+        "शुरुआती लक्षण पर मैंकोजेब 75 WP (2.5 ग्राम प्रति लीटर) का छिड़काव करें।",
+        "गंभीर प्रकोप में साइमोक्सानिल 8% + मैंकोजेब 64% WP (2 ग्राम प्रति लीटर) डालें।"
+      ],
+      "prevention": [
+        "पौधों के बीच 60x45 सेमी दूरी रखें।",
+        "ड्रिप सिंचाई अपनाएं, पत्तों पर पानी न डालें।",
+        "3 वर्ष का फसल चक्र अपनाएं।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांवर व खोडावर काळे पाणीदार चट्टे पडतात.",
+        "दमट हवेत पानांच्या खाली पांढरी बुरशी दिसते.",
+        "फळे तपकिरी पडून सडतात."
+      ],
+      "organic": [
+        "रोगट पाने तोडून जाळून टाका.",
+        "ट्रायकोडर्मा व्हिरिडी (५ ग्रॅम/लिटर) फवारावे.",
+        "कॉपर ऑक्सीक्लोराईड (३ ग्रॅम/लिटर) चा फवारा द्यावा."
+      ],
+      "chemical": [
+        "सुरुवातीला मॅन्कोझेब ७५ डब्ल्यूपी (२.५ ग्रॅम/लिटर) फवारावे.",
+        "तीव्रतेनुसार सायमोक्सॅनिल + मॅन्कोझेब (२ ग्रॅम/लिटर) वापरावे."
+      ],
+      "prevention": [
+        "६०x४५ सेमी अंतरावर लागवड करावी.",
+        "ठिबक सिंचनाचा वापर करावा.",
+        "सोलानेसी कुळातील पिकांनंतर फेरपालट करावी."
+      ]
+    }
+  },
+  {
+    "slug": "tomato-early-blight",
+    "crop": "Tomato",
+    "name_en": "Tomato Early Blight",
+    "name_hi": "टमाटर का अगेती झुलसा",
+    "name_mr": "टोमॅटोचा अगेती करपा",
+    "pathogen": "Fungal (Alternaria solani)",
+    "severity_default": "medium",
+    "source_name": "ICAR - Indian Agricultural Research Institute (IARI)",
+    "source_url": "https://iari.res.in",
+    "en": {
+      "symptoms": [
+        "Concentric target-board ring spots on older lower leaves.",
+        "Yellow chlorotic halos surrounding brown necrotic leaf spots.",
+        "Premature defoliation exposing green fruits to sunscald."
+      ],
+      "organic": [
+        "Mulch around plant bases to prevent soil splash onto foliage.",
+        "Apply neem seed kernel extract (NSKE 5%) or copper hydroxide (2.5g/L)."
+      ],
+      "chemical": [
+        "Spray Chlorothalonil 75% WP @ 2g/L or Difenoconazole 25% EC @ 1ml/L at 12-day intervals."
+      ],
+      "prevention": [
+        "Select certified disease-free seeds; treat with hot water or Thiram.",
+        "Prune lower leaves that touch the ground."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "निचली पुरानी पत्तियों पर छल्लावाले गोल भूरे धब्बे।",
+        "धब्बों के चारों ओर पीला छल्ला दिखाई देता है।",
+        "पत्तियां सूखकर जल्दी गिर जाती हैं।"
+      ],
+      "organic": [
+        "मल्चिंग करें ताकि मिट्टी के छींटे पत्तों पर न लगें।",
+        "नीम के बीज का अर्क (NSKE 5%) का छिड़काव करें।"
+      ],
+      "chemical": [
+        "डाइफेनोकोनाजोल 25% EC (1 मिली प्रति लीटर) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "प्रमाणित बीजों का उपयोग करें।",
+        "जमीन को छूने वाली निचली पत्तियों की छंटाई करें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "जुन्या पानांवर वर्तुळाकार रिंग सारखे तपकिरी ठिपके पडतात.",
+        "ठिपक्यांभोवती पिवळसर वलय दिसते.",
+        "झाडाची पाने अकाली गळतात."
+      ],
+      "organic": [
+        "जमिनीवर आच्छादन (मल्चिंग) करावे.",
+        "निमार्क ५% किंवा ट्रायकोडर्माची फवारणी करावी."
+      ],
+      "chemical": [
+        "डायफेनोकोनॅझोल २५ ईसी (१ मिली प्रति लिटर) फवारावे."
+      ],
+      "prevention": [
+        "प्रमाणित बियाण्यांचा वापर करावा.",
+        "जमिनीलगतची पाने काढून टाकावीत."
+      ]
+    }
+  },
+  {
+    "slug": "wheat-yellow-rust",
+    "crop": "Wheat",
+    "name_en": "Wheat Yellow Stripe Rust",
+    "name_hi": "गेहूं का पीला रतुआ",
+    "name_mr": "गव्हावरील पिवळा तांबेरा",
+    "pathogen": "Fungal (Puccinia striiformis)",
+    "severity_default": "high",
+    "source_name": "ICAR - Indian Institute of Wheat and Barley Research (IIWBR)",
+    "source_url": "https://iiwbr.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Bright yellow-orange powdery pustules arranged in linear stripes along leaf veins.",
+        "Yellow dust rubs off readily onto clothing and fingers.",
+        "Shrivelled grain development with substantial yield reduction."
+      ],
+      "organic": [
+        "Grow rust-resistant wheat varieties (e.g. DBW 187, DBW 222, HD 3086).",
+        "Maintain balanced potassium nutrition to strengthen cell walls."
+      ],
+      "chemical": [
+        "Spray Propiconazole 25% EC @ 1ml/L or Tebuconazole 250 EC @ 1ml/L water immediately upon seeing stripe pustules."
+      ],
+      "prevention": [
+        "Avoid late sowing in northern high-risk zones.",
+        "Survey field margins weekly during December through February cool morning periods."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्तियों की नसों के समानांतर चमकीले पीले रंग की धारियां।",
+        "हाथ लगाने पर पीला पाउडर अंगुलियों पर चिपक जाता है।",
+        "दाने पतले और कमजोर बनते हैं।"
+      ],
+      "organic": [
+        "रोग प्रतिरोधी किस्में (DBW 187, DBW 222) ही बोएं।",
+        "पोटाश की संतुलित मात्रा दें।"
+      ],
+      "chemical": [
+        "प्रोपीकोनाजोल 25% EC (1 मिली प्रति लीटर) का तुरंत छिड़काव करें।"
+      ],
+      "prevention": [
+        "गेहूं की देर से बुवाई न करें।",
+        "दिसंबर से फरवरी के दौरान खेतों की नियमित निगरानी करें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांच्या शिरांच्या बाजूने पिवळसर पावडरयुक्त पट्टे तयार होतात.",
+        "हाताला पिवळी भुकटी सहज चिकटते.",
+        "दाणे बारीक व पोचट भरतात."
+      ],
+      "organic": [
+        "तांबेरा प्रतिकारक वाण पेरावेत.",
+        "पोटॅश खतांचा संतुलित वापर करावा."
+      ],
+      "chemical": [
+        "प्रोपिकोनाझोल २५ ईसी (१ मिली प्रति लिटर) चा फवारा द्यावा."
+      ],
+      "prevention": [
+        "उशिरा पेरणी टाळावी.",
+        "थंडीच्या दिवसांत शेताची सातत्याने पाहणी करावी."
+      ]
+    }
+  },
+  {
+    "slug": "potato-late-blight",
+    "crop": "Potato",
+    "name_en": "Potato Late Blight",
+    "name_hi": "आलू का पिछेती झुलसा",
+    "name_mr": "बटाट्याचा पिछेती करपा",
+    "pathogen": "Oomycete (Phytophthora infestans)",
+    "severity_default": "high",
+    "source_name": "ICAR - Central Potato Research Institute (CPRI)",
+    "source_url": "https://cpri.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Water-soaked blackish lesions starting at leaf tips and margins.",
+        "White downy fungal growth on lower leaf surfaces under misty conditions.",
+        "Tubers develop dry, rusty brown sunken rot under skin."
+      ],
+      "organic": [
+        "Use certified healthy seed tubers from accredited seed agencies.",
+        "Cut foliage (dehaulming) 10-12 days before harvest to prevent tuber contamination."
+      ],
+      "chemical": [
+        "Preventive: Mancozeb 75% WP @ 2.5g/L. Curative: Dimethomorph 50% WP @ 1g/L + Mancozeb."
+      ],
+      "prevention": [
+        "Earth up ridges well so tubers are covered by 10-15cm of soil.",
+        "Destroy cull piles of abandoned tubers near fields."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्तियों के किनारों पर काले पानीदार धब्बे।",
+        "कोहरे वाले मौसम में पत्तियों के नीचे सफेद फफूंद।",
+        "आलू कंद पर भूरे गड्ढेनुमा सड़े हुए धब्बे।"
+      ],
+      "organic": [
+        "प्रमाणित रोगमुक्त आलू बीजों का ही प्रयोग करें।",
+        "खुदाई से 10-12 दिन पहले बेल काट दें (डिहाल्मिंग)।"
+      ],
+      "chemical": [
+        "मैंकोजेब 75% WP (2.5 ग्राम/लीटर) का निवारक छिड़काव करें।"
+      ],
+      "prevention": [
+        "मिट्टी अच्छे से चढ़ाएं ताकि कंद 10-15 सेमी ढके रहें।",
+        "खेत के आसपास खराब आलुओं का ढेर न लगाएं।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांच्या कडांवर काळपट चट्टे उठतात.",
+        "पानांच्या खालच्या बाजूला पांढरी बुरशी वाढते.",
+        "बटाटा कंदावर तांबूस तपकिरी खोलगट सड तयार होते."
+      ],
+      "organic": [
+        "प्रमाणित व निरोगी बियाणे वापरावे.",
+        "काढणीपूर्वी १० दिवस आधी झाडाचे शेंडे छाटावेत."
+      ],
+      "chemical": [
+        "मॅन्कोझेब ७५ डब्ल्यूपी (२.५ ग्रॅम/लिटर) फवारावे."
+      ],
+      "prevention": [
+        "झाडांना योग्य भर देऊन बटाटे मातीखाली झाकावेत.",
+        "शेतातील रोगट कंद नष्ट करावेत."
+      ]
+    }
+  },
+  {
+    "slug": "rice-bacterial-blight",
+    "crop": "Rice",
+    "name_en": "Rice Bacterial Leaf Blight",
+    "name_hi": "धान का जीवाणु झुलसा",
+    "name_mr": "भातावरील जिवाणूजन्य करपा",
+    "pathogen": "Bacterial (Xanthomonas oryzae pv. oryzae)",
+    "severity_default": "high",
+    "source_name": "ICAR - National Rice Research Institute (NRRI)",
+    "source_url": "https://nrri.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Water-soaked yellowish-green stripes with wavy wavy margins on leaf blades.",
+        "Leaves dry up rapidly turning grayish-white ('kresek' seedling wilt phase).",
+        "Milky bacterial ooze beads on young lesions in morning dew."
+      ],
+      "organic": [
+        "Avoid high excessive nitrogen fertilizer; split nitrogen into 3-4 topdressings.",
+        "Spray fresh cow dung filtrate (20%) or neem cake aqueous extract (5%)."
+      ],
+      "chemical": [
+        "Copper hydroxide 53.8% DF @ 1.5g/L or Streptocycline 100ppm (1g in 10L) + Copper oxychloride (25g in 10L)."
+      ],
+      "prevention": [
+        "Treat seed with Streptocycline (1g in 10L water for 25kg seeds for 8 hours).",
+        "Drain stagnant water from infected paddy fields."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "धान की पत्तियों पर लहरदार किनारों वाली पीली-सफेद धारियां।",
+        "पत्तियां सूखकर भूरी-सफेद हो जाती हैं।",
+        "सुबह की ओस में पत्तियों पर जीवाणु का चिपचिपा स्राव।"
+      ],
+      "organic": [
+        "नाइट्रोजन खाद का अत्यधिक प्रयोग न करें।",
+        "ताजे गोबर का अर्क (20%) या नीम खली का घोल छिड़कें।"
+      ],
+      "chemical": [
+        "स्ट्रेप्टोसाइक्लिन (1 ग्राम प्रति 10 लीटर) + कॉपर ऑक्सीक्लोराइड (25 ग्राम प्रति 10 लीटर) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "बुवाई से पहले बीज उपचार करें।",
+        "खेत से रुका हुआ गंदा पानी बाहर निकालें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांच्या कडांवरून पिवळसर नागमोडी चट्टे पडतात.",
+        "पाने सुकतात व पांढुरकी पडतात.",
+        "सकाळच्या वेळी पानांवर जिवाणूंचे चिकट थेंब दिसतात."
+      ],
+      "organic": [
+        "नत्राचा अतिवापर टाळावा, हप्त्यामध्ये खते द्यावीत.",
+        "शेणखताचे पाणी (२०%) गाळून फवारावे."
+      ],
+      "chemical": [
+        "स्ट्रेप्टोमायसीन सल्फेट (१ ग्रॅम/१० लिटर) + कॉपर ऑक्सीक्लोराईड (२५ ग्रॅम/१० लिटर) फवारावे."
+      ],
+      "prevention": [
+        "पेरणीपूर्वी बीजप्रक्रिया करावी.",
+        "शेतातील साचलेले पाणी निचरा करून काढावे."
+      ]
+    }
+  },
+  {
+    "slug": "cotton-leaf-curl",
+    "crop": "Cotton",
+    "name_en": "Cotton Leaf Curl Virus",
+    "name_hi": "कपास का पत्ता मरोड़ रोग",
+    "name_mr": "कापसावरील चुरडा-मुरडा (लीफ कर्ल)",
+    "pathogen": "Viral (Begomovirus vectored by Whitefly)",
+    "severity_default": "high",
+    "source_name": "ICAR - Central Institute for Cotton Research (CICR)",
+    "source_url": "https://cicr.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Upward or downward cupping and thickening of young cotton leaves.",
+        "Enation (leaf-like outgrowths) on the underside of main leaf veins.",
+        "Stunting of cotton bushes with drastically reduced square and boll formation."
+      ],
+      "organic": [
+        "Install yellow sticky traps (25 per hectare) to monitor and catch whitefly vectors.",
+        "Spray 5% Neem Seed Kernel Extract (NSKE) or Neem oil 3000ppm @ 3ml/L."
+      ],
+      "chemical": [
+        "Manage vector whitefly: Diafenthiuron 50% WP @ 1g/L or Pyriproxyfen 10% EC @ 2ml/L. Alternate chemical classes."
+      ],
+      "prevention": [
+        "Eradicate weed hosts (Sida, Abutilon, Parthenium) around field borders.",
+        "Plant CLCuV-tolerant BG-II cotton hybrids recommended by CICR."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्तियां ऊपर या नीचे की तरफ मुड़कर मोटी हो जाती हैं।",
+        "पत्ती की मुख्य नस के नीचे छोटे पत्ते जैसी संरचना (इनेशन) बन जाती है।",
+        "पौधे छोटे रह जाते हैं और टिंडे बहुत कम लगते हैं।"
+      ],
+      "organic": [
+        "सफेद मक्खी पकड़ने के लिए पीले चिपचिपे कार्ड लगाएं।",
+        "नीम तेल (3000 ppm) 3 मिली प्रति लीटर का छिड़काव करें।"
+      ],
+      "chemical": [
+        "सफेद मक्खी नियंत्रण हेतु डायफेनथियूरॉन 50% WP (1 ग्राम/लीटर) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "खेत की मेड़ों से गाजर घास और खरपतवार हटाएं।",
+        "प्रमाणित रोगरोधी किस्मों की ही बुवाई करें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पाने वरच्या किंवा खालच्या बाजूला चुरगळतात व जाड होतात.",
+        "पानांच्या मुख्य शिरांच्या खाली लहान पानासारखी वाढ दिसते.",
+        "झाडांची वाढ खुंटते व बोंडे कमी लागतात."
+      ],
+      "organic": [
+        "पांढरी माशी नियंत्रणासाठी पिवळे चिकट सापळे लावावेत.",
+        "निमार्क किंवा कडुनिंब तेल (५ मिली/लिटर) फवारावे."
+      ],
+      "chemical": [
+        "डायफेन्थियुरॉन ५०% डब्ल्यूपी (१ ग्रॅम/लिटर) चा फवारा द्यावा."
+      ],
+      "prevention": [
+        "शेताच्या बांधावरील तण (गाजरगवत) काढून टाकावे.",
+        "रोग प्रतिकारक हायब्रीड वाणांची निवड करावी."
+      ]
+    }
+  },
+  {
+    "slug": "apple-scab",
+    "crop": "Apple",
+    "name_en": "Apple Scab",
+    "name_hi": "सेब का स्केब रोग",
+    "name_mr": "सफरचंदावरील खवले रोग",
+    "pathogen": "Fungal (Venturia inaequalis)",
+    "severity_default": "medium",
+    "source_name": "Dr. Y.S. Parmar University of Horticulture & Forestry",
+    "source_url": "https://yspuniversity.ac.in",
+    "en": {
+      "symptoms": [
+        "Olive-green to velvety dark brown lesions on apple leaves.",
+        "Cork-like scabby patches developing on apple fruit skin, causing cracking.",
+        "Deformed stunted apples dropping prematurely."
+      ],
+      "organic": [
+        "Rake and shred fallen orchard leaves; spray urea 5% on leaf litter in autumn.",
+        "Spray sulfur 80% WDG (3g/L) during pink bud orchard stages."
+      ],
+      "chemical": [
+        "Apply Dodine 65% WP @ 0.75g/L or Kresoxim-methyl 44.3% SC @ 0.5ml/L according to university scab forecast calendar."
+      ],
+      "prevention": [
+        "Ensure open canopy pruning to allow maximum sunlight and rapid rain drying.",
+        "Follow advisory sprays timed to ascospore discharge periods."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्तियों पर जैतूनी हरे व गहरे भूरे मखमली धब्बे।",
+        "फलों की त्वचा पर खुरदुरे पपड़ीदार धब्बे व दरारें।",
+        "फल विकृत होकर समय से पहले गिर जाते हैं।"
+      ],
+      "organic": [
+        "पतझड़ में गिरी पत्तियों को इकट्ठा कर नष्ट करें, 5% यूरिया का छिड़काव करें।",
+        "गुलाबी कली अवस्था में घुलनशील गंधक (3 ग्राम/लीटर) छिड़कें।"
+      ],
+      "chemical": [
+        "डोडिन 65% WP (0.75 ग्राम प्रति लीटर पानी) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "बगीचों में अच्छी छंटाई करें ताकि धूप और हवा अंदर जा सके।",
+        "विश्वविद्यालय के स्प्रे शेड्यूल का पालन करें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांवर हिरवट-तपकिरी मखमली चट्टे पडतात.",
+        "फळांवर खवले व भेगा पडतात.",
+        "फळे वेळेआधीच गळून पडतात."
+      ],
+      "organic": [
+        "गळालेली पाने जाळून नष्ट करावीत.",
+        "सल्फर ८०% डब्लूडीजी (३ ग्रॅम/लिटर) फवारावे."
+      ],
+      "chemical": [
+        "डोडीन ६५% डब्ल्यूपी (०.७५ ग्रॅम/लिटर) चा फवारा द्यावा."
+      ],
+      "prevention": [
+        "बागेत हवा खेळती राहील अशी झाडांची छाटणी करावी.",
+        "विद्यापीठाच्या फवारणी वेळापत्रकाचे पालन करावे."
+      ]
+    }
+  },
+  {
+    "slug": "corn-common-rust",
+    "crop": "Maize",
+    "name_en": "Maize Common Rust",
+    "name_hi": "मक्का का रतुआ",
+    "name_mr": "मक्यावरील तांबेरा",
+    "pathogen": "Fungal (Puccinia sorghi)",
+    "severity_default": "medium",
+    "source_name": "ICAR - Indian Institute of Maize Research (IIMR)",
+    "source_url": "https://iimr.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Golden-brown to cinnamon pustules erupting on both upper and lower leaf surfaces.",
+        "Pustules turn brownish-black late in the season.",
+        "Extensive rust coverage causes premature leaf desiccation."
+      ],
+      "organic": [
+        "Select certified resistant maize hybrids.",
+        "Ensure adequate balanced phosphorus and potassium fertilization."
+      ],
+      "chemical": [
+        "Spray Mancozeb 75% WP @ 2.5g/L or Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1ml/L at initial rust fleck stage."
+      ],
+      "prevention": [
+        "Avoid consecutive maize monocropping in endemic tracts.",
+        "Plow down infected crop stubble deeply post-harvest."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्ती की दोनों सतहों पर सुनहरे-भूरे उभरे हुए दानेदार फफोले।",
+        "मौसम के अंत में फफोले काले-भूरे हो जाते हैं।",
+        "पत्तियां सूखकर पीली पड़ जाती हैं।"
+      ],
+      "organic": [
+        "रोगरोधी संकर मक्का किस्मों की बुवाई करें।",
+        "संतुलित फास्फोरस व पोटाश खाद डालें।"
+      ],
+      "chemical": [
+        "मैंकोजेब 75% WP (2.5 ग्राम प्रति लीटर पानी) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "मक्का के बाद खेत में दलहनी फसलें लगाएं।",
+        "कटाई के बाद खेत की गहरी जुताई करें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांच्या दोन्ही बाजूंवर तांबूस-तपकिरी रंगाचे लहान फोड येतात.",
+        "हंगामाच्या शेवटी फोड काळे पडतात.",
+        "पाने वाळून झाडाची वाढ थांबते."
+      ],
+      "organic": [
+        "प्रतिकारक संकरित बियाणे वापरावे.",
+        "संतुलित खतांचा वापर करावा."
+      ],
+      "chemical": [
+        "मॅन्कोझेब ७५ डब्ल्यूपी (२.५ ग्रॅम/लिटर) चा फवारा द्यावा."
+      ],
+      "prevention": [
+        "पीक फेरपालट करावी.",
+        "काढणीनंतर शेताची खोल नांगरट करावी."
+      ]
+    }
+  },
+  {
+    "slug": "grape-black-rot",
+    "crop": "Grape",
+    "name_en": "Grape Black Rot",
+    "name_hi": "अंगूर का काला सड़न रोग",
+    "name_mr": "द्राक्षांवरील काळी सड (ब्लॅक रॉट)",
+    "pathogen": "Fungal (Guignardia bidwellii)",
+    "severity_default": "medium",
+    "source_name": "ICAR - National Research Centre for Grapes (NRCG)",
+    "source_url": "https://nrcgrapes.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Circular reddish-brown leaf spots with dark margins and tiny black pycnidia dots.",
+        "Infected grape berries turn soft, turn bluish-black, and shrivel into hard wrinkled mummies.",
+        "Berries shatter easily from cluster stems."
+      ],
+      "organic": [
+        "Prune and burn mummified grape clusters left on trellises during winter.",
+        "Apply copper sulfate / lime Bordeaux mixture (1%) before bud break."
+      ],
+      "chemical": [
+        "Spray Myclobutanil 10% WP @ 0.5g/L or Kresoxim-methyl 44.3% SC @ 0.6ml/L from pre-bloom through berry touch stage."
+      ],
+      "prevention": [
+        "Trellis training and canopy shoot thinning to facilitate rapid cluster drying.",
+        "Maintain clean vineyard floor free of wild grapevines."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "पत्तियों पर गहरे किनारों वाले लाल-भूरे गोल धब्बे।",
+        "अंगूर के दाने सड़कर नीले-काले और सिकुड़े हुए 'ममी' जैसे हो जाते हैं।",
+        "दाने गुच्छों से आसानी से टूटकर गिरते हैं।"
+      ],
+      "organic": [
+        "सर्दियों में पुराने सूखे गुच्छों को तोड़कर जला दें।",
+        "कली फूटने से पहले 1% बोर्डो मिश्रण का छिड़काव करें।"
+      ],
+      "chemical": [
+        "माइक्लोब्यूटानिल 10% WP (0.5 ग्राम प्रति लीटर पानी) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "बेलों की छंटाई इस तरह करें कि गुच्छों तक धूप और हवा पहुंचे।",
+        "खेत को खरपतवार मुक्त रखें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "पानांवर लालसर-तपकिरी गोलाकार डाग पडतात.",
+        "द्राक्षांचे मणी काळे पडून सुरकुततात व वाळून ममीसारखे होतात.",
+        "घडामधून मणी गळतात."
+      ],
+      "organic": [
+        "झाडावर राहिलेले सुकलेले घड गोळा करून जाळून टाकावेत.",
+        "१% बोर्डो मिश्रणाचा प्रतिबंधात्मक फवारा द्यावा."
+      ],
+      "chemical": [
+        "मायक्लोब्युटॅनिल १०% डब्ल्यूपी (०.५ ग्रॅम/लिटर) फवारावे."
+      ],
+      "prevention": [
+        "बागेत कॅनॉपी मॅनेजमेंट करून हवा खेळती ठेवावी.",
+        "द्राक्ष बागेत स्वच्छता ठेवावी."
+      ]
+    }
+  },
+  {
+    "slug": "soybean-rust",
+    "crop": "Soybean",
+    "name_en": "Asian Soybean Rust",
+    "name_hi": "सोयाबीन का रतुआ",
+    "name_mr": "सोयाबीनवरील तांबेरा",
+    "pathogen": "Fungal (Phakopsora pachyrhizi)",
+    "severity_default": "high",
+    "source_name": "ICAR - Indian Institute of Soybean Research (IISR)",
+    "source_url": "https://iisrindore.icar.gov.in",
+    "en": {
+      "symptoms": [
+        "Tiny polygonal tan-to-brown lesions on lower leaf surfaces.",
+        "Cone-shaped uredinial pustules visible under 10x hand lens releasing tan spores.",
+        "Rapid yellowing of canopy and premature defoliation reducing pod fill."
+      ],
+      "organic": [
+        "Early planting of early-maturing rust-tolerant soybean cultivars (e.g. JS 20-34, NRC 127).",
+        "Avoid close seed spacing; ensure 45cm row distance."
+      ],
+      "chemical": [
+        "Foliar spray with Hexaconazole 5% EC @ 1ml/L or Propiconazole 25% EC @ 1ml/L at first detection or flowering stage."
+      ],
+      "prevention": [
+        "Monitor volunteer soybean and legume weeds during monsoon breaks.",
+        "Apply sprays before canopy closure if wet humid weather persists."
+      ]
+    },
+    "hi": {
+      "symptoms": [
+        "निचली पत्तियों पर छोटे भूरे-पीले कोणीय धब्बे।",
+        "लेंस से देखने पर छोटे ज्वालामुखी जैसे उभार दिखते हैं जिनसे पाउडर निकलता है।",
+        "पत्तियां तेजी से पीली पड़कर गिर जाती हैं।"
+      ],
+      "organic": [
+        "रोगरोधी शीघ्र पकने वाली किस्में (JS 20-34) लगाएं।",
+        "कतारों के बीच 45 सेमी दूरी रखें।"
+      ],
+      "chemical": [
+        "हेक्साकोनाजोल 5% EC (1 मिली प्रति लीटर) का छिड़काव करें।"
+      ],
+      "prevention": [
+        "मानसून में खेत की मेड़ों पर उगने वाले खरपतवार नष्ट करें।",
+        "फूल आने की अवस्था में मौसम नम रहने पर सतर्क रहें।"
+      ]
+    },
+    "mr": {
+      "symptoms": [
+        "खालच्या पानांवर लहान कोनीय तांबूस ठिपके पडतात.",
+        "ठिपक्यांमधून सूक्ष्म तांबूस भुकटी बाहेर पडते.",
+        "झाडाची पाने पिवळी पडून गळतात व शेंगा पोचट राहतात."
+      ],
+      "organic": [
+        "लवकर येणारे प्रतिकारक वाण पेरावेत.",
+        "ओळींमध्ये ४५ सेमी अंतर ठेवावे."
+      ],
+      "chemical": [
+        "हेक्साकोनाझोल ५ ईसी (१ मिली प्रति लिटर) चा फवारा द्यावा."
+      ],
+      "prevention": [
+        "शेताच्या बांधावरील तण नष्ट करावे.",
+        "फुलोरा अवस्थेत दमट वातावरण असल्यास तातडीने उपाययोजना करावी."
+      ]
+    }
+  }
+]

@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+.coverage
+*.lcov
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# IDEs & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Storage & Uploads
+uploads/
+minio-data/
+postgres-data/
+redis-data/
+
+# Model checkpoints & large files
+*.onnx
+*.pth
+*.pt
+*.h5
+mlruns/
+wandb/

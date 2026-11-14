@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "scan": "Scan Leaf",
+    "awareness": "Outbreak News",
+    "diseases": "Disease Library",
+    "history": "History",
+    "about": "About",
+    "privacy": "Privacy"
+  },
+  "hero": {
+    "title": "Instant AI Plant Disease Diagnosis",
+    "subtitle": "Protect your crops with explainable leaf diagnosis, visual Grad-CAM heatmaps, and ICAR-certified treatment advisory.",
+    "scanNow": "Scan a Leaf Now",
+    "exploreNews": "View Outbreak News",
+    "kpiAccuracy": "95%+ Accuracy",
+    "kpiLatency": "<2s Inference",
+    "kpiCertified": "100% Certified Advisory"
+  },
+  "disclaimer": {
+    "banner": "AI-assisted guidance only, not a replacement for an agronomist. Always confirm severe cases with a local Krishi Vigyan Kendra (KVK) or agriculture officer."
+  },
+  "scan": {
+    "title": "Analyze Plant Leaf",
+    "uploadTab": "Photo Upload",
+    "cameraTab": "Live Camera",
+    "dropzonePrompt": "Drag and drop leaf image here or click to browse",
+    "dropzoneHint": "Supported: JPEG, PNG, WebP (Max 15MB)",
+    "analyzeBtn": "Diagnose Disease",
+    "analyzing": "Analyzing leaf image...",
+    "retake": "Retake Photo",
+    "holdSteady": "Hold steady",
+    "tooDark": "Too dark - need more light",
+    "tooBlurry": "Image is blurry - tap to refocus"
+  },
+  "result": {
+    "title": "Diagnosis Result",
+    "leafDetected": "Leaf Detected",
+    "confidence": "Confidence",
+    "severity": "Severity",
+    "heatmap": "Disease Area Heatmap",
+    "symptoms": "Symptoms",
+    "organic": "Organic Management",
+    "chemical": "Chemical Control",
+    "prevention": "Preventive Measures",
+    "sources": "Certified Information Source",
+    "feedbackPrompt": "Was this diagnosis correct?",
+    "yes": "Yes, Correct",
+    "no": "Incorrect",
+    "readAloud": "Listen to Advisory"
+  },
+  "awareness": {
+    "title": "Crop Disease & Outbreak Awareness",
+    "subtitle": "Real-time surveillance feeds, government alerts, and regional advisories.",
+    "filterByState": "Filter by State",
+    "filterByCrop": "Filter by Crop",
+    "activeAlerts": "Active Outbreak Alerts",
+    "trending": "Trending Plant Diseases",
+    "readMore": "Read Full Advisory"
+  },
+  "footer": {
+    "tagline": "Empowering farmers and students with trustworthy AI guidance.",
+    "rights": "All rights reserved. Built for agriculture innovation."
+  }
+}

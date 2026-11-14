@@ -1,0 +1,43 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "id": 1,
+      "title": "Diagnosis Latency (p95)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(cropguard_http_request_duration_seconds_bucket[5m])) by (le))",
+          "legendFormat": "p95 Latency (s)"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "id": 2,
+      "title": "HTTP Request Volume by Endpoint",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "sum(rate(cropguard_http_requests_total[5m])) by (endpoint, status)",
+          "legendFormat": "{{endpoint}} ({{status}})"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["cropguard", "ai", "observability"],
+  "time": { "from": "now-6h", "to": "now" },
+  "title": "CropGuard AI Production Dashboard",
+  "uid": "cropguard-overview"
+}

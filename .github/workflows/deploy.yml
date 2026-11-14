@@ -1,0 +1,40 @@
+name: CropGuard AI Deployment
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    name: Build & Push Docker Images
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build API Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: apps/api/Dockerfile
+          push: false
+          tags: cropguard/api:latest
+
+      - name: Build Inference Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: apps/inference/Dockerfile
+          push: false
+          tags: cropguard/inference:latest
+
+      - name: Build Web Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: apps/web
+          file: apps/web/Dockerfile
+          push: false
+          tags: cropguard/web:latest

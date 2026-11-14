@@ -1,0 +1,3 @@
+# Place trained ONNX models here:
+# cropguard_efficientnet_b0_v1.onnx
+# leaf_validator_v1.onnx

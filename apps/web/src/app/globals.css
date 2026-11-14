@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 20% 98%;
+    --foreground: 140 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 30% 12%;
+
+    /* CropGuard Green */
+    --primary: 130 55% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm Earth Ochre */
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 30 50% 20%;
+
+    --muted: 60 10% 92%;
+    --muted-foreground: 140 10% 40%;
+
+    --accent: 130 40% 92%;
+    --accent-foreground: 130 60% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 15% 88%;
+    --input: 140 15% 88%;
+    --ring: 130 55% 38%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 140 25% 7%;
+    --foreground: 60 15% 95%;
+
+    --card: 140 25% 10%;
+    --card-foreground: 60 15% 95%;
+
+    --popover: 140 25% 10%;
+    --popover-foreground: 60 15% 95%;
+
+    --primary: 130 50% 48%;
+    --primary-foreground: 140 30% 6%;
+
+    --secondary: 35 20% 18%;
+    --secondary-foreground: 35 40% 90%;
+
+    --muted: 140 20% 15%;
+    --muted-foreground: 140 10% 65%;
+
+    --accent: 130 30% 18%;
+    --accent-foreground: 130 50% 85%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 140 20% 18%;
+    --input: 140 20% 18%;
+    --ring: 130 50% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground min-h-screen flex flex-col font-sans antialiased;
+  }
+}

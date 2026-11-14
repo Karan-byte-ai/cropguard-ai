@@ -1,0 +1,31 @@
+version: "1.0"
+approved_sources:
+  - id: icar
+    name: "Indian Council of Agricultural Research (ICAR)"
+    authority_level: "national"
+    url: "https://icar.org.in"
+    description: "Apex body for coordinating, guiding, and managing research and education in agriculture in India."
+
+  - id: kvk
+    name: "Krishi Vigyan Kendra (KVK)"
+    authority_level: "district"
+    url: "https://kvk.icar.gov.in"
+    description: "Agricultural extension centers in India focused on on-farm testing, demonstration, and training."
+
+  - id: iihr
+    name: "ICAR - Indian Institute of Horticultural Research"
+    authority_level: "national"
+    url: "https://iihr.icar.gov.in"
+    description: "Leading research institute for fruits, vegetables, ornamental, and medicinal crops."
+
+  - id: dwr
+    name: "ICAR - Indian Institute of Wheat and Barley Research"
+    authority_level: "national"
+    url: "https://iiwbr.icar.gov.in"
+    description: "Coordinates wheat and barley research and disease rust vigilance nationwide."
+
+  - id: maharashtra_agri
+    name: "Department of Agriculture, Government of Maharashtra"
+    authority_level: "state"
+    url: "https://krishi.maharashtra.gov.in"
+    description: "State agricultural department advisories and pest surveillance."
