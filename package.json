@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Plant Disease Identification and Awareness Platform",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
   "scripts": {
     "dev:web": "cd apps/web && npm run dev",
     "build:web": "cd apps/web && npm run build",

@@ -2,8 +2,9 @@
 
 import * as React from "react";
 import { Camera, RefreshCw, AlertCircle, Sparkles, CheckCircle2, ShieldAlert } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 import { analyzeCanvasQuality, QualityCheckResult, compressImage } from "@/lib/quality-check";
 
 interface CameraCaptureProps {
@@ -182,12 +183,8 @@ export function CameraCapture({ onCapture, onFallbackToUpload }: CameraCapturePr
           </p>
         </div>
         <div className="flex flex-col gap-2 w-full max-w-xs">
-          <label className="w-full">
-            <Button className="w-full gap-2" asChild>
-              <span>
-                <Camera className="h-4 w-4" /> Open Native Camera Fallback
-              </span>
-            </Button>
+          <label className={cn(buttonVariants({ className: "w-full gap-2 cursor-pointer" }))}>
+            <Camera className="h-4 w-4" /> Open Native Camera Fallback
             <input
               type="file"
               accept="image/*"

@@ -9,18 +9,21 @@ import { DisclaimerBanner } from "@/components/layout/DisclaimerBanner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { OfflineIndicator } from "@/components/pwa/OfflineIndicator";
 
+export const dynamic = "force-dynamic";
+
+export const viewport = {
+  themeColor: "#276425",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata = {
   title: "CropGuard AI - Plant Disease Identification & Awareness",
   description:
     "Instant leaf disease diagnosis with Grad-CAM heatmaps, ICAR-grounded advisory, and live outbreak intelligence.",
   manifest: "/manifest.json",
-  themeColor: "#276425",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
 };
 
 export function generateStaticParams() {
