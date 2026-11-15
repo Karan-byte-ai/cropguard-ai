@@ -49,8 +49,8 @@ minio-data/
 postgres-data/
 redis-data/
 
-# Model checkpoints & large files
-*.onnx
+# Model checkpoints & large files (keep .onnx included per requirements)
+!*.onnx
 *.pth
 *.pt
 *.h5
