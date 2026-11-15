@@ -16,7 +16,7 @@ export default async function DiseaseDetailPage({ params: { locale, slug } }: Pr
   let disease: any = null;
 
   try {
-    const res = await fetch(`http://localhost:8000/api/v1/diseases/${slug}?lang=${locale}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/diseases/${slug}?lang=${locale}`, {
       next: { revalidate: 3600 },
     });
     if (res.ok) {

@@ -44,7 +44,7 @@ export default function ScanPage({ params: { locale } }: { params: { locale: str
       formData.append("locale", locale);
 
       setUploadProgress(40);
-      const res = await fetch("http://localhost:8000/api/v1/scans", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/scans`, {
         method: "POST",
         body: formData,
       });

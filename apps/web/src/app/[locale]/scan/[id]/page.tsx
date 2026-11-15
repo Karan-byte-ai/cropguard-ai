@@ -118,7 +118,7 @@ export default function ScanResultPage({
     }
 
     // 2. Fetch from backend API
-    fetch(`http://localhost:8000/api/v1/scans/${id}`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/scans/${id}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data) {
@@ -151,7 +151,7 @@ export default function ScanResultPage({
   const handleFeedback = async (isCorrect: boolean) => {
     setFeedbackStatus("submitting");
     try {
-      await fetch(`http://localhost:8000/api/v1/scans/${id}/feedback`, {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/scans/${id}/feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ is_correct: isCorrect, note: feedbackNote }),

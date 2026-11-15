@@ -98,7 +98,7 @@ export async function flushOfflineScanQueue(
       formData.append("locale", item.locale);
       if (item.cropHint) formData.append("crop_hint", item.cropHint);
 
-      const res = await fetch("http://localhost:8000/api/v1/scans", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/scans`, {
         method: "POST",
         body: formData,
       });
