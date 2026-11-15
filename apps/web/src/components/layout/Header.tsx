@@ -55,6 +55,13 @@ export function Header({ locale }: { locale: string }) {
           >
             {t("history")}
           </Link>
+          <Link
+            href={`/${locale}/history`}
+            className="text-foreground/80 hover:text-foreground transition-colors"
+          >
+            {t("history")}
+          </Link>
+
         </nav>
 
         {/* Right Header Actions */}

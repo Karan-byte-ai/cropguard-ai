@@ -51,6 +51,12 @@ export function Footer({ locale }: { locale: string }) {
                   {tNav("history")}
                 </Link>
               </li>
+              <li>
+                <Link href={`/${locale}/history`} className="hover:text-foreground">
+                  {tNav("history")}
+                </Link>
+              </li>
+
             </ul>
           </div>
 
