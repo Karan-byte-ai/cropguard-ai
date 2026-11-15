@@ -213,12 +213,7 @@ export default function ScanResultPage({
             <p className="leading-relaxed font-medium">{scanData.disclaimer}</p>
           </div>
 
-          {/* Grad-CAM Explainability Slider (Section 5.1 & 7.3) */}
-          <HeatmapViewer
-            originalUrl={scanData.originalUrl}
-            heatmapUrl={scanData.heatmapUrl}
-          />
-
+          {/* Heatmap hidden: backend returns general advice only */}
           {/* Top-3 Predictions Distribution */}
           <div className="space-y-2 pt-2">
             <h3 className="font-semibold text-sm">Class Probability Breakdown</h3>
@@ -231,9 +226,8 @@ export default function ScanResultPage({
                   </div>
                   <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
                     <div
-                      className={`h-full rounded-full ${
-                        idx === 0 ? "bg-crop-600" : "bg-muted-foreground/40"
-                      }`}
+                      className={`h-full rounded-full ${idx === 0 ? "bg-crop-600" : "bg-muted-foreground/40"
+                        }`}
                       style={{ width: `${p.confidence * 100}%` }}
                     />
                   </div>
@@ -316,8 +310,8 @@ export default function ScanResultPage({
               {feedbackStatus === "idle"
                 ? t("feedbackPrompt")
                 : feedbackStatus === "confirmed"
-                ? "✓ Marked as correct. Thank you!"
-                : "Feedback recorded for model retraining."}
+                  ? "✓ Marked as correct. Thank you!"
+                  : "Feedback recorded for model retraining."}
             </span>
 
             {feedbackStatus === "idle" && (
