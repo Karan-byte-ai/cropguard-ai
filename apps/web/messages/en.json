@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Instant AI Plant Disease Diagnosis",
-    "subtitle": "Protect your crops with AI leaf diagnosis with advisory guidance based on ICAR and KVK sources.",
+    "subtitle": "Protect your crops with AI leaf diagnosis with general advisory guidance (always confirm with your local KVK).",
     "scanNow": "Scan a Leaf Now",
     "exploreNews": "View Outbreak News",
     "kpiAccuracy": "99.94%",
@@ -18,7 +18,7 @@
     "kpiLatency": "<2s",
     "kpiLatencyDesc": "Instant CPU Inference",
     "kpiSources": "38 Classes",
-    "kpiSourcesDesc": "ICAR & KVK Grounded Advisory"
+    "kpiSourcesDesc": "General advisory guidance"
   },
   "disclaimer": {
     "banner": "AI-assisted guidance only, not a replacement for an agronomist. Always confirm severe cases with a local Krishi Vigyan Kendra (KVK) or agriculture officer."
