@@ -59,6 +59,14 @@ export default function ScanPage({ params: { locale } }: { params: { locale: str
       const scanResult = await res.json();
       setUploadProgress(100);
 
+      if (typeof window !== "undefined") {
+        try {
+          sessionStorage.setItem(`scan_${scanResult.scanId}`, JSON.stringify(scanResult));
+        } catch (e) {
+          console.warn("Could not cache scan result:", e);
+        }
+      }
+
       // Navigate to detailed result page
       router.push(`/${locale}/scan/${scanResult.scanId}`);
     } catch (err: any) {

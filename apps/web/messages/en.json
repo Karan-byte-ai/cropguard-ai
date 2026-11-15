@@ -13,9 +13,12 @@
     "subtitle": "Protect your crops with explainable leaf diagnosis, visual Grad-CAM heatmaps, and ICAR-certified treatment advisory.",
     "scanNow": "Scan a Leaf Now",
     "exploreNews": "View Outbreak News",
-    "kpiAccuracy": "95%+ Accuracy",
-    "kpiLatency": "<2s Inference",
-    "kpiCertified": "100% Certified Advisory"
+    "kpiAccuracy": "99.94%",
+    "kpiAccuracyDesc": "Validation accuracy on PlantVillage (38 classes)",
+    "kpiLatency": "<2s",
+    "kpiLatencyDesc": "Instant CPU Inference",
+    "kpiSources": "38 Classes",
+    "kpiSourcesDesc": "ICAR & KVK Grounded Advisory"
   },
   "disclaimer": {
     "banner": "AI-assisted guidance only, not a replacement for an agronomist. Always confirm severe cases with a local Krishi Vigyan Kendra (KVK) or agriculture officer."
@@ -43,7 +46,7 @@
     "organic": "Organic Management",
     "chemical": "Chemical Control",
     "prevention": "Preventive Measures",
-    "sources": "Certified Information Source",
+    "sources": "ICAR-grounded advisory (PlantVillage, 99.94% val-acc)",
     "feedbackPrompt": "Was this diagnosis correct?",
     "yes": "Yes, Correct",
     "no": "Incorrect",

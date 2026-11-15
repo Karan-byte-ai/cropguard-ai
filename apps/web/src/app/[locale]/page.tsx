@@ -44,24 +44,24 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
           </div>
 
           {/* KPI Metrics */}
-          <div className="grid grid-cols-3 gap-2 md:gap-6 pt-8 max-w-2xl mx-auto border-t border-muted/80">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 pt-8 max-w-2xl mx-auto border-t border-muted/80">
             <div className="space-y-1">
               <div className="text-xl sm:text-3xl font-extrabold text-crop-600 dark:text-crop-400">
                 {t("kpiAccuracy")}
               </div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Trained & Calibrated</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">{t("kpiAccuracyDesc")}</div>
             </div>
-            <div className="space-y-1 border-x border-muted">
+            <div className="space-y-1 sm:border-x border-muted pt-2 sm:pt-0">
               <div className="text-xl sm:text-3xl font-extrabold text-crop-600 dark:text-crop-400">
                 {t("kpiLatency")}
               </div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Instant CPU Speed</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">{t("kpiLatencyDesc")}</div>
             </div>
-            <div className="space-y-1">
+            <div className="space-y-1 pt-2 sm:pt-0">
               <div className="text-xl sm:text-3xl font-extrabold text-crop-600 dark:text-crop-400">
-                {t("kpiCertified")}
+                {t("kpiSources")}
               </div>
-              <div className="text-xs sm:text-sm text-muted-foreground">ICAR & KVK Sources</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">{t("kpiSourcesDesc")}</div>
             </div>
           </div>
         </div>

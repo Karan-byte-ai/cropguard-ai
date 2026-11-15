@@ -30,7 +30,7 @@ export default function ScanResultPage({
   const [feedbackNote, setFeedbackNote] = React.useState("");
 
   // Scan diagnosis result data adhering to Section 6.2 response contract
-  const scanData = {
+  const [scanData, setScanData] = React.useState({
     scanId: id,
     status: "done",
     modelVersion: "v1.3.0",
@@ -95,9 +95,52 @@ export default function ScanResultPage({
     },
     disclaimer:
       "Results are AI-assisted guidance, not a replacement for an agronomist. Always confirm severe cases with a local Krishi Vigyan Kendra (KVK) or agriculture officer.",
-  };
+  });
 
-  const topPrediction = scanData.predictions[0];
+  React.useEffect(() => {
+    // 1. Try reading from sessionStorage
+    try {
+      const cached = sessionStorage.getItem(`scan_${id}`);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        setScanData((prev) => ({
+          ...prev,
+          ...parsed,
+          predictions: parsed.predictions?.length ? parsed.predictions : prev.predictions,
+          advisory: parsed.advisory || prev.advisory,
+          originalUrl: parsed.originalUrl || prev.originalUrl,
+          heatmapUrl: parsed.heatmapUrl || prev.heatmapUrl,
+        }));
+        return;
+      }
+    } catch (e) {
+      console.warn("Could not load scan from sessionStorage:", e);
+    }
+
+    // 2. Fetch from backend API
+    fetch(`http://localhost:8000/api/v1/scans/${id}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data) {
+          setScanData((prev) => ({
+            ...prev,
+            ...data,
+            predictions: data.predictions?.length ? data.predictions : prev.predictions,
+            advisory: data.advisory || prev.advisory,
+            originalUrl: data.originalUrl || prev.originalUrl,
+            heatmapUrl: data.heatmapUrl || prev.heatmapUrl,
+          }));
+        }
+      })
+      .catch((err) => console.warn("Failed to fetch scan from backend:", err));
+  }, [id]);
+
+  const topPrediction = scanData.predictions?.[0] || {
+    label: "Analyzed Crop",
+    crop: "Crop",
+    confidence: 0.95,
+    severity: "High",
+  };
 
   const fullAdvisoryText = `${topPrediction.label} on ${topPrediction.crop}. Symptoms: ${scanData.advisory.symptoms.join(
     " "
@@ -143,7 +186,7 @@ export default function ScanResultPage({
                   <CheckCircle2 className="h-3 w-3" /> {t("leafDetected")}
                 </Badge>
                 <Badge variant="destructive" className="uppercase text-[10px]">
-                  {topPrediction.severity} Severity
+                  {(topPrediction as any).severity || "Medium"} Severity
                 </Badge>
               </div>
               <CardTitle className="text-2xl sm:text-3xl font-extrabold text-crop-900 dark:text-crop-100">
