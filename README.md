@@ -1,106 +1,41 @@
-# CropGuard AI 🌿
-**Plant Disease Identification and Awareness Platform**
+# CropGuard AI
 
-CropGuard AI is a mobile-first, production-ready AI platform designed to photograph plant leaves, diagnose crop diseases with explainable Grad-CAM heatmaps, provide ICAR-certified treatment advisory in English, Hindi, and Marathi, and track regional pest outbreak surveillance.
+Plant leaf disease detection in English, Hindi and Marathi.
+Team Pacific Coders | Srujan Hackathon 2026 | AI-05, Track T1
 
----
+## What it does
+Take or upload a photo of a leaf. CropGuard AI returns the likely disease, a confidence score and general advisory guidance with an ICAR link, in your language.
 
-## 🏗 System Architecture
+## Live links
+- Website: https://cropguard-ai-rho.vercel.app
+- Android app (APK + QR): https://cropguard-ai-rho.vercel.app/en/download
+- Backend API: https://cropguard-api-n68r.onrender.com/health
+  (free tier: the first request after idle can take about a minute)
 
-The platform follows a modular monolith architecture with isolated async workers and inference services:
+## Tech stack
+- Frontend: Next.js PWA (apps/web), deployed on Vercel
+- Backend: FastAPI + ONNX Runtime (backend/), deployed on Render
+- Model: EfficientNet-B0, 38 PlantVillage classes
+- Android: PWA packaged with PWABuilder; iPhone users use Safari > Share > Add to Home Screen
 
-```
-cropguard-ai/
-├── apps/
-│   ├── web/           # Next.js 14 PWA (App Router, Tailwind, next-intl, shadcn/ui)
-│   ├── api/           # FastAPI Gateway (Auth, Scans, Advisory, News, PostGIS/pgvector)
-│   ├── inference/     # ONNX Runtime microservice (Leaf validation, EfficientNet-B0, Grad-CAM)
-│   └── worker/        # Celery & Celery Beat (News ingestion, data retention)
-├── ml/                # Model training, dataset balancing, ONNX export pipeline
-├── knowledge-base/    # ICAR/KVK-grounded advisory content & sources.yaml
-├── infra/             # Docker Compose, Nginx reverse proxy, Prometheus, Grafana
-├── .github/workflows/ # CI/CD pipelines (ruff, bandit, pytest, eslint, tsc, docker)
-└── docs/              # OpenAPI specs, Architecture Decision Records (ADRs)
-```
+## Model results and honest limits
+- 99.94% validation accuracy on 17,572 PlantVillage images.
+- These are lab-style images. Accuracy on real field photos will be lower.
+- Advice is general guidance only, not a certified diagnosis. Consult a local agricultural officer.
 
----
+## Run locally
+Backend:
+    cd backend
+    pip install -r requirements.txt
+    uvicorn app.main:app --reload
+Frontend:
+    cd apps/web
+    npm install
+    npm run dev
+Set NEXT_PUBLIC_API_URL to your backend URL ending in /api/v1.
 
-## 🚀 Quick Start (Local Docker Compose)
+## Known gaps
+No feedback endpoint yet, no Grad-CAM heatmaps, Disease Library content is static.
 
-Start all services with a single command:
-
-```bash
-# 1. Clone repository & configure environment
-cp .env.example .env
-
-# 2. Spin up complete environment via Docker Compose
-docker compose up -d --build
-```
-
-### Services & URLs:
-- **Web App (Next.js PWA)**: [http://localhost:3000](http://localhost:3000)
-- **API Gateway (FastAPI)**: [http://localhost:8000](http://localhost:8000)
-- **Interactive OpenAPI Docs**: [http://localhost:8000/api/v1/docs](http://localhost:8000/api/v1/docs)
-- **Inference Microservice**: [http://localhost:8001](http://localhost:8001)
-- **MinIO S3 Console**: [http://localhost:9001](http://localhost:9001) (`minioadmin` / `minioadmin`)
-- **Prometheus Metrics**: [http://localhost:9090](http://localhost:9090)
-- **Grafana Dashboard**: [http://localhost:3001](http://localhost:3001) (`admin` / `admin`)
-
----
-
-## 🛠 Manual Development Setup
-
-### 1. Backend API (FastAPI)
-```bash
-cd apps/api
-python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\activate
-pip install -r requirements.txt
-
-# Run database migrations
-alembic upgrade head
-
-# Start API server
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-```
-
-### 2. Frontend Web App (Next.js 14)
-```bash
-cd apps/web
-npm install
-npm run dev
-```
-
----
-
-## 🧪 Testing & Linting
-
-### Backend Tests:
-```bash
-cd apps/api
-pytest tests/ -v
-ruff check .
-bandit -r app -ll
-```
-
-### Frontend Tests & Type Checking:
-```bash
-cd apps/web
-npm run lint
-npm run type-check
-npm run build
-```
-
----
-
-## 🛡 Security Controls (Section 11)
-- **Upload Hardening**: File MIME verification by magic bytes, image re-encoding via Pillow (destroys malicious payloads), EXIF and GPS stripping.
-- **Privacy Compliance**: Client IPs are hashed with SHA-256; only coarse geographical regions are retained.
-- **Authentication**: Argon2 password hashing with short-lived JWT access tokens and rotating refresh tokens in `httpOnly` `SameSite=Lax` cookies.
-- **Rate Limiting**: Token-bucket rate limiting backed by Redis.
-- **Transport**: Strict Content Security Policy (CSP), Permissions-Policy (camera locked to self origin), HSTS, X-Content-Type-Options.
-
----
-
-## 📜 Disclaimer
-> **Medical / Agronomic Notice**: Results are AI-assisted guidance, not a replacement for an agronomist. Always confirm severe cases with a local Krishi Vigyan Kendra (KVK) or agriculture officer.
+## Team
+Pacific Coders
