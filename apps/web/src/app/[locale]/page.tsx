@@ -92,9 +92,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
               <div className="h-10 w-10 rounded-lg bg-crop-100 text-crop-800 dark:bg-crop-900/60 dark:text-crop-300 flex items-center justify-center font-bold">
                 2
               </div>
-              <h3 className="font-semibold text-lg">AI Vision & Heatmap</h3>
+              <h3 className="font-semibold text-lg">AI Vision Diagnosis</h3>
               <p className="text-sm text-muted-foreground">
-                Neural networks identify the pathogen while Grad-CAM overlays highlight the exact symptom spots on the leaf.
+                A neural network trained on 38 crop-disease classes identifies the likely disease and shows its confidence.
               </p>
             </CardContent>
           </Card>
@@ -104,9 +104,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
               <div className="h-10 w-10 rounded-lg bg-crop-100 text-crop-800 dark:bg-crop-900/60 dark:text-crop-300 flex items-center justify-center font-bold">
                 3
               </div>
-              <h3 className="font-semibold text-lg">Certified Treatment</h3>
+              <h3 className="font-semibold text-lg">Advisory Guidance</h3>
               <p className="text-sm text-muted-foreground">
-                Receive certified organic and chemical remedies grounded strictly in official ICAR & state university guides.
+                Receive organic and chemical remedy guidance grounded strictly in official ICAR & state university guides.
               </p>
             </CardContent>
           </Card>

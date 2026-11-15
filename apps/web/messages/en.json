@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Instant AI Plant Disease Diagnosis",
-    "subtitle": "Protect your crops with explainable leaf diagnosis, visual Grad-CAM heatmaps, and ICAR-certified treatment advisory.",
+    "subtitle": "Protect your crops with AI leaf diagnosis with advisory guidance based on ICAR and KVK sources.",
     "scanNow": "Scan a Leaf Now",
     "exploreNews": "View Outbreak News",
     "kpiAccuracy": "99.94%",
